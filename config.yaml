@@ -1,0 +1,55 @@
+baseURL: https://0bugTeam.github.io/
+languageCode: en-us
+title: 0bug
+buildDrafts: true
+copyright: 0bug
+titleCaseStyle: none
+
+params:
+  description: Learn Hack Fail Repeat
+  mode: toggle
+  social:
+    - name: GitHub
+      icon: github
+      url: https://github.com/0bugTeam
+    - name: CTFtime
+      icon: flag
+      url: https://ctftime.org/team/238436
+    - name: RSS
+      icon: rss
+      url: https://0bugTeam.github.io/index.xml
+  members:
+    - name: 1byteBoy
+      link: https://github.com/1byteBoy
+      picture: https://avatars.githubusercontent.com/1byteboy
+      tags: [ 'null']
+      description:
+        - 11111111 66 111 121
+        - /proc/kcore
+    - name: zacian
+      link: 
+      picture: https://cdn.discordapp.com/avatars/730361554889080862/9694ee5b59069a4ee68c1f434eb3d020?size=1024
+      tags: ['web', 'pwn', 'crypto']
+      description:
+        - A dedicated Bug Bunty Hunter
+        - Web Security Wizard
+  excludedSections:
+    - about
+    - events
+  homeWriteupCnt: 10
+  katex: true
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Events
+      url: /events
+      weight: 2
+    - name: Tags
+      url: /tags
+      weight: 3
+    - name: About
+      url: /about
+      weight: 4

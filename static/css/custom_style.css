@@ -1,0 +1,26 @@
+.stranger-case-container {
+    background: black;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.stranger-case-pp {
+    width: 20rem;
+    height: auto;
+}
+
+.sorry-image{
+    width: 30rem;
+    height: auto;
+}
+
+.sorry-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
