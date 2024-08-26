@@ -12,12 +12,12 @@
     /* other vars */
     --borderradius: 1px;
     --taglineheight: 2.1em;
-    --logo-size: 100%;
+    --logo-size: 75vh;
 }
 
 html {
     color: #232333;
-    font-family: 'Caskaydia Code';
+    font-family: 'Caskaydia Code', monospace;
     font-size: 16px;
     line-height: 1.7em;
 }
@@ -47,8 +47,7 @@ spacer {
 }
 
 p {
-    /* font-family: 'Fira Sans', sans-serif; */
-    font-family: 'Caskaydia Code';
+    font-family: 'Caskaydia Code', sans-serif;
 }
 
 hr {
@@ -424,10 +423,9 @@ table td {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    background-image: url('/images/0bugBackground.png');
+    background-image: url('/images/0bugLogo.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     opacity: 0.15;
     z-index: -10;
 }

@@ -7,13 +7,15 @@ tags:
 draft: false
 ---
 
-```
+## Description
+
 Unbreakable
 
 Think you can escape my grasp? Challenge accepted! I dare you to try and break free, but beware, it won't be easy. I'm ready for whatever tricks you have up your sleeve!
-```
 
-*Well for this challenge i had to sell my sould for a bit =)*
+## Solution
+
+Well for this challenge i had to sell my soul for a bit =]
 
 The challenge comes with a netcat instance and a downlaodable python file
 
@@ -48,12 +50,8 @@ print(open('flag.txt').read())
 
 *Although the value is continated with `()`, it runs and prints the flag and then executes the exception part*
 
----
 
-Source of knowledge :
+## Source of knowledge
 
-https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes
-
-and 
-
+https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes\
 https://docs.python.org/3/library/functions.html

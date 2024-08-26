@@ -12,7 +12,7 @@ author: "1byteBoy"
 
 Amidst the swirling tempest of chaos, seeds of creation take root, birthing new possibilities from the depths of uncertainty.
 
-------
+## Solution
 
 We were provided with zip file [Anarkhia.zip](https://odyssey.hackrocks.com/media/challenges/CTF-ODYSSEY-04/content/Anarkhia.zip), which contains two files one being `out.txt` which contains the following data
 
