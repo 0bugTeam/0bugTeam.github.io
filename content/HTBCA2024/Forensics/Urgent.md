@@ -7,13 +7,15 @@ tags:
 draft: false
 ---
 
-```
+## Description
+
 Urgent
 
 In the midst of Cybercity's "Fray," a phishing attack targets its factions, sparking chaos. As they decode the email, cyber sleuths race to trace its source, under a tight deadline. Their mission: unmask the attacker and restore order to the city. In the neon-lit streets, the battle for cyber justice unfolds, determining the factions' destiny.
-```
 
-The zip file contains a .eml file. Opening or reading it with any .eml reader online or with any other application that reads .eml file, will give us a attachment named `onlineform.html`. 
+## Solution
+
+The zip file contains a .eml file. Opening or reading it with any .eml reader online or with any other application that reads .eml file will give us a attachment named `onlineform.html`. 
 
 Downling and reading the source of the file provides us with a url encoded string.
 

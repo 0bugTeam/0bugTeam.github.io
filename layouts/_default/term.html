@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ if isset .Data "Term" }}
-<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+<h1>Entries tagged : {{ .Data.Term }}</h1>
 {{ else }}
 <h1 class="page-title">All writeups</h1>
 {{ end }}
@@ -10,7 +10,7 @@
 {{ range ($allPages.GroupBy "Section") }}
 
     {{ $sectionHeading := $.Site.GetPage .Key }}
-    <h3><a href="{{ $sectionHeading.RelPermalink }}">{{ $sectionHeading.Title }}</a></h3>
+    <h2><a href="{{ $sectionHeading.RelPermalink }}">{{ $sectionHeading.Title }}</a></h3>
 
     <ul class="posts terminal-prefix">
         {{ range sort .Pages "Title" "asc" }}

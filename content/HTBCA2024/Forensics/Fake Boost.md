@@ -7,11 +7,13 @@ tags:
 draft: false
 ---
 
-```
+## Description
+
 Fake Boost
 
 In the shadow of The Fray, a new test called ""Fake Boost"" whispers promises of free Discord Nitro perks. It's a trap, set in a world where nothing comes without a cost. As factions clash and alliances shift, the truth behind Fake Boost could be the key to survival or downfall. Will your faction see through the deception? KORP™ challenges you to discern reality from illusion in this cunning trial.
-```
+
+## Solution
 
 From the downloadable file, we get a `pcapng` file which we can open using wireshark.
 
@@ -35,7 +37,8 @@ Upon decoding the string with `base64` gives us part of the flag.
 
 -----
 
-The second part of th flag seems to be in the other `POST` request `/rj1893rj1joijdkajwda`, that we got in wireshark.
+The second part of th flag seems to be in the other `POST` request\
+`/rj1893rj1joijdkajwda`, that we got in wireshark.
 
 It also contains some kind of base64 encoded data 
 
