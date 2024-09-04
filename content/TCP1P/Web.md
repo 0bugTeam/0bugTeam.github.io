@@ -8,15 +8,17 @@ tags:
 draft: false
 ---
 
-**Author**: `daffainfo`
+## Description
+
+**`Author: daffainfo`**
 
 It turns out that learning to make websites using NuxtJS is really fun
 
 [http://ctf.tcp1p.com:45681](http://ctf.tcp1p.com:45681)
 
-----------
+## Intuition
 
-The challenge came with a zip file that contains the following files'
+The challenge came with a zip file that contains the following files
 
 ```
 .
@@ -82,9 +84,7 @@ so the developer is cloning the source code of a framework and if we check the l
 
 Now if we look for NuxtJS vulnerability with that version number here what we get. First, the core repo is archived and the development has shifted to another repo https://github.com/nuxt/framework
 
-Now if we google for `nuxt framwork security vulnerablity` here is one of the site that we get
-
-https://pentest-tools.com/vulnerabilities-exploits/nuxt-framework-remote-code-execution_CVE-2023-3224 which talks about
+Now if we google for `nuxt framwork security vulnerablity` here is one of the site that we get [nuxt-framework-remote-code-execution_CVE-2023-3224 which talks about](https://pentest-tools.com/vulnerabilities-exploits/nuxt-framework-remote-code-execution_CVE-2023-3224) which talks about the following
 
 *Nuxt Framework is affected by a Remote Code Execution vulnerability inside the `nuxt-root.vue` component. The root cause of this vulnerability is improper sanitization of user-provided input in the URL by accessing `/__nuxt_component_test__/` endpoint. This allows an unauthenticated malicious attacker to execute commands on the Node.js server.*
 
@@ -122,6 +122,8 @@ The blog explain the CVE in a really detailed way and show different ways of how
 **Arbitrary File Read in development mode** where we can read any file using the following `/_nuxt/@fs/file/path/here`
 
 now we can intercept the request and paste the following to get the flag
+
+## Solution
 
 ```css
 GET /_nuxt/@fs//flag.txt HTTP/1.1

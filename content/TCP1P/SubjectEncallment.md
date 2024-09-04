@@ -8,11 +8,13 @@ tags:
 draft: false
 ---
 
-**Author**: `Kisanak`
+## Description
+
+**`Author: Kisanak`**
 
 If there's something strange. In your neighborhood. Who you gonna call?
 
------------
+## Intuition
 
 The challenge came with a 64-bit ELF executable, first thing i did is open it up with Ghidra. Looking at the main function we can see the following
 
@@ -62,6 +64,8 @@ first of all this are the main functions
 
 Now doing the following will give us the flag
 
+## Solution
+
 ```
 $ gdb chall
 (gdb) break main
@@ -79,9 +83,10 @@ TCP1P{here_my_number_so_call_me_maybe}
 (gdb)
 ```
 
-source of knowledge 
+`TCP1P{here_my_number_so_call_me_maybe}`
+
+## source of knowledge 
+
 https://www.sans.org/blog/using-gdb-to-call-random-functions/
 
 *There might be other really good ways of doing it but it worked for me*
-
-`TCP1P{here_my_number_so_call_me_maybe}`

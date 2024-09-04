@@ -16,8 +16,6 @@ Maybe it's your first time pwning? Can you overwrite the variable?
 
 `nc ctf.tcp1p.com 17027`
 
------------------
-
 ## Intuition
 
 *Honestly i knew nothing about buffer overflows not even a A of it, but i did take time to learn some basic practises where we can overflow a stack by putting a long input, this is mainly due to a vulnerable function in C programming language named `gets()`* 

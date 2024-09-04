@@ -8,11 +8,12 @@ tags:
 draft: false
 ---
 
+## Description
+
 **Author**: `underzero`
 
 Explore this disk image file, maybe you can find something hidden in it.
 
------
 
 With this challenge we get a zip file containing a file named `challenge.ntfs`.
 One googling we don't get anything nor does any AI model knows about this file format, so this is a fake file format, but if we do run file command on it we see the following
@@ -94,7 +95,7 @@ https://scanqr.org/
 TCP1P{hidden_flag_in_the_extended_attributes_fea73c5920aa8f1c}
 ```
 
-*Note i used https://regexr.com/, to make my regex*
+Note i used https://regexr.com/  to make my regex
 
 
 

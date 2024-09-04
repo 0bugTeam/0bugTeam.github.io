@@ -8,11 +8,13 @@ tags:
 draft: false
 ---
 
-**Author**: `botanbell`
+## Description
+
+**`Author: botanbell`**
 
 unzip me pls
 
-----------
+## Intuitio
 
 OK so this challenge was pretty straight forward but tricky a resource and time intensive, all we have to do is extract the zip files one after another until the last one, so i used chatGPT to write a simple python script that automate reading password from password.txt and unzipping the file one after another.
 
@@ -21,6 +23,8 @@ The initial file was named `zip -25000.zip` after extracting with the password f
 so it's likely that it will decrement upto `zip-1.zip` and maybe give us the flag file. So i wrote a python script but it was slow and resource intensive, i left and tried other challenges but then my friend showed me his python script as it was not working after extracting some files, but what got me interested is that he is using system commands instead of fully utilizing python functionality, so then and then i thought of using bash or shell scripting to make the process and it was rally fast and resource friendly
 
 Here is my script
+
+## Solution
 
 ```bash
 #!/bin/bash

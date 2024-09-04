@@ -8,11 +8,15 @@ tags:
 draft: false
 ---
 
-**Author**: `rennfurukawa`
+## Description
+
+**`Author : rennfurukawa`**
 
 My friend said if i can _guess_ the right number, he will give me something. Can you help me?
 
 `nc ctf.tcp1p.com 7331`
+
+## Intuition
 
 The challenge came with a ELF binary file, since it is not a BE challenge i had not considering to run `checksec` or use gdb, instead i directly opened it with `ghidra auto guess`
 
@@ -63,7 +67,9 @@ $ python3
 
 here 10 is alternative to `0xcafebabe` , so we know iVar1 which is random value, which can be generated using the seed, we know *some_value* which is `0x1467f3U` and we know the output which is `0xcafebabe`
 
-and now if we do say `10 ^ 3 + 4` we get 2 or the key. Here is a C code that can give us the key value 
+and now if we do say `10 ^ 3 + 4` we get 2 or the key. Here is a C code that can give us the key value
+
+## Solution
 
 ```c
 #include <stdio.h>
@@ -90,7 +96,8 @@ TCP1P{r4nd0m_1s_n0t_th4t_r4nd0m_r19ht?_946f38f6ee18476e7a0bff1c1ed4b23b}
 Correct! This is your flag :
 ```
 
-source of help and knowledge
+## Source of Knowledge
+
 https://www.taintedbits.com/2020/06/07/binary-exploitation-pwnable-kr-level-6/
 
 
