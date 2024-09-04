@@ -33,6 +33,19 @@ params:
       description:
         - A dedicated Bug Bounty Hunter
         - Web Security Wizard
+    - name: syr1ne
+      link: https://github.com/syr1ne
+      picture: https://avatars.githubusercontent.com/u/167830358?v=4
+      tags: ['web', 'misc', 'osint']
+      description:
+        - Arch Linux Lover
+        - philosopher
+    - name: octodi
+      link: 
+      picture: https://cdn.discordapp.com/avatars/1082941763083321354/fa564dd1d6edd761ca04a3b29d981ccc?size=1024
+      tags: ['web']
+      description:
+        - Cute Octopus that Hacks
   excludedSections:
     - about
     - events

@@ -1,17 +1,21 @@
 ---
 title: Stop Drop and Roll 
-date: 2023-12-10T13:37:49+02:00
+date: 2024-03-14
 author: 1byteBoy
 tags:
   - Misc
 draft: false
 ---
 
-```
+## Description
+
 Stop Drop and Roll
 
 The Fray: The Video Game is one of the greatest hits of the last... well, we don't remember quite how long. Our "computers" these days can't run much more than that, and it has a tendency to get repetitive...
-```
+
+## Solution
+
+Connectig to the netcat instance show the following
 
 ```
 ===== THE FRAY: THE VIDEO GAME =====
@@ -32,7 +36,7 @@ FIRE, GORGE, PHREAK, PHREAK, PHREAK
 What do you do?
 ```
 
-so we can write the following script to automate
+Now the thing the challenge is asking us to do is very challenging to do manually. so we can write the following script to automate the whole thing
 
 ```python
 from pwn import *

@@ -86,7 +86,7 @@ ul {
 }
 
 ul.terminal-prefix {
-    list-style-type: '⦿ ';
+    list-style-type: '$ ';
     padding-left: 3ch;
     line-height: var(--taglineheight);
 }
@@ -419,7 +419,7 @@ table td {
     position: fixed;
     height: var(--logo-size);
     width: var(--logo-size);
-    top: 50%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

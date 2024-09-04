@@ -1,6 +1,6 @@
 ---
 title: Unbreakable 
-date: 2023-12-10T13:37:49+02:00
+date: 2024-12-10
 author: 1byteBoy
 tags:
   - Misc
@@ -48,7 +48,7 @@ So basically after a lot of trial and error, where at first i was trying to get 
 print(open('flag.txt').read())
 ```
 
-*Although the value is continated with `()`, it runs and prints the flag and then executes the exception part*
+Although the value is continated with `()`, it runs and prints the flag and then executes the exception part
 
 
 ## Source of knowledge

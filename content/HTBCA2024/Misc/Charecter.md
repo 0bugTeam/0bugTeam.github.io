@@ -1,17 +1,19 @@
 ---
 title: Charecter 
-date: 2023-12-10T13:37:49+02:00
+date: 2024-03-14
 author: 1byteBoy
 tags:
   - Misc
 draft: false
 ---
 
-```
+## Description
+
 Character
 
 Security through Induced Boredom is a personal favourite approach of mine. Not as exciting as something like The Fray, but I love making it as tedious as possible to see my secrets, so you can only get one character at a time!
-```
+
+## Solution
 
 It gives us and IP and a Port through which we can connect using netcat.
 
