@@ -111,4 +111,7 @@ Alright then! You've proven that you are indeed Elite!! Congratulations on joini
 CyGenixCTF{W3lc0me_t0_Th3_ELIt3_5qU4d_5bf90dac2b7}
 ```
 
+----
 
+This challenge was great to learn about different HTTP headers and how they work\
+[developer.mozilla.org](https://developer.mozilla.org/) helped a lot

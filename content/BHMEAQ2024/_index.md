@@ -1,3 +1,3 @@
 ---
-title: BlackHat MEA CTF Qualification 2024
+title: BlackHat MEA Qual.
 ---

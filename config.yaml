@@ -27,7 +27,7 @@ params:
         - 11111111 66 111 121
         - /proc/kcore
     - name: zacian
-      link: 
+      link: https://owasp.org/www-project-top-ten/
       picture: https://cdn.discordapp.com/avatars/730361554889080862/9694ee5b59069a4ee68c1f434eb3d020?size=1024
       tags: ['web', 'pwn', 'crypto']
       description:
@@ -38,7 +38,7 @@ params:
       picture: https://avatars.githubusercontent.com/u/167830358?v=4
       tags: ['web', 'misc', 'osint']
       description:
-        - Arch Linux Lover
+        - Professional Distro Hopper
         - philosopher
     - name: octodi
       link: 
@@ -46,6 +46,24 @@ params:
       tags: ['web']
       description:
         - Cute Octopus that Hacks
+    - name: zoozoo
+      link: 
+      picture: https://cdn.discordapp.com/avatars/854751340688048198/e94af50f3d25b9939dbc465b12f32efa?size=1024
+      tags: ['pwn']
+      description: 
+        - zoozoo
+    - name: coderebel_x
+      link: 
+      picture: https://cdn.discordapp.com/avatars/1272253304981684350/f4c31e53a1af1b10116bed66e8511a3e?size=1024
+      tags: ['crypto']
+      description:
+        - Can solve crypto with pen and paper
+    - name: Cha0s
+      link: 
+      picture: https://cdn.discordapp.com/avatars/782977640747106375/e6f5a4c0efd8d8d122486de9e7d6e85a?size=1024
+      tags: ['reversing', 'osint']
+      description:
+        - Fear Him
   excludedSections:
     - about
     - events

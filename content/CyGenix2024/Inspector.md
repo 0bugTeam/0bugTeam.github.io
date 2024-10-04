@@ -4,6 +4,7 @@ date: 2024-08-26
 author: zacian
 tags:
   - Web
+  - JWT
 draft: false
 ---
 

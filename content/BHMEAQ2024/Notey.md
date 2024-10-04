@@ -13,13 +13,13 @@ I created a note sharing website for everyone to talk to themselves secretly. Do
 
 ----
 
-Note : While making this writeup, the challenge infrastucture were already closed, so i had to setup the application manually
+Note : While making this writeup, the challenge infrastucture was already closed, so i had to setup the application manually
 
 ## Intuition
 
 Like the other Web challenge [Watermelon](/bhmeaq2024/watermelon/), this challenge too don't have any dedicated frontend to interact with, so we have to send request to backend manually using cURL or BurpSuite
 
-After going through the JavaScript code in `src` folder that was provided to us as public attachment, we can spot different functionalities in `index.js` file. Let's go through it one by one
+After going through the JavaScript code in `src` folder that was provided to us as public attachment, we can spot different core application functionalities in `index.js` file. Let's go through it one by one
 
 First the login, so let's try to login
 
@@ -45,9 +45,9 @@ $ curl -v -X POST http://127.0.0.1:5000/login \
 {"message":"Login successful"} 
 ```
 
-Now in the next part i had some issues. For some weird reason, i was unable to perform or use other functionalities with the cookie the application provided after loging in, i don't know what i was missing but whatever i did, it says `Authentication required.`, maybe we can't use that cookie to act as a user and add or view note 
+Now in the next part i had some issues. For some weird reason, i was unable to perform or use other functionalities with the cookie the application provided after loging in, i don't know what i was missing or doing wrong but whatever i did, it says `Authentication required.`, maybe we can't use that cookie to act as a user and add or view note 
 
-Anyways in the following i came up with rather a simple python script with just the `request` module and that did the job and also the script contains the actual solution for the challenge, that is to exploit SQL Injection vulnerability i the `viewNote` input parameters
+Anyways in the following i came up with rather a simple python script with just the `request` module and that did the job and also the script contains the actual solution for the challenge which is to exploit a SQL Injection vulnerability in the `viewNote` input parameters
 
 ## Vulnerability
 
@@ -72,9 +72,9 @@ app.get('/viewNote', middleware.auth, (req, res) => {
 
 First of all we can see, the application only checks for `note_id` and `note_secret` and doesn't check for which user is actually asking using `req.session.username` function
 
-[node-js-sql-injection-guide-examples-and-prevention](https://www.stackhawk.com/blog/node-js-sql-injection-guide-examples-and-prevention/), at the very end of this article, under the Type Checking section we can see that an attacker passing in a value that gets evaluated as an Object instead of a String value can cause SQLi Vulnerability. for us it would be something like 
+Check [node-js-sql-injection-guide-examples-and-prevention](https://www.stackhawk.com/blog/node-js-sql-injection-guide-examples-and-prevention/), at the very end of this article, under the Type Checking section we can see that an attacker passing in a value that gets evaluated as an Object instead of a String value can cause SQLi Vulnerability. for us it would be something like 
 
-in `index.js` i also noted the following
+in `index.js` i also noticed the following
 
 ```js
 app.use(bodyParser.urlencoded({
@@ -82,7 +82,7 @@ extended: true
 }))
 ```
 
-The extended set to true basically allows user to provide user input as an object 
+The extended set to true basically allows user to provide user input as an object or any other valid format
 
 ```
 note_id=66&note_secret[secret]=1
@@ -94,7 +94,7 @@ Here `note_secret[secret]` is passed as an object, this results in the following
 SELECT * FROM notes WHERE note_id = 66 AND note_secret = `note_secret` = 1
 ```
 
-The `note_secret = ``note_secret`` = 1` evaluates to TRUE and is a 1=1 attack. BUT WHY `66` ? This is cause in most CTFs say a new created user get's an id of 2 where the id of admin would be 1, similarly when we upload a single note the note_id it shows is 67 and it's a guess that the note_id of admin might be 66, now number is guessable and BruteForceable but not the note_secret and that's where the we implant our injection attack 
+The ``note_secret = `note_secret` = 1`` evaluates to TRUE and is a 1=1 attack. BUT WHY `66` ? This is cause in most CTFs say a new created user get's an id of 2 where the id of admin would be 1, similarly when we upload a single note the note_id it shows is 67 and it's a guess that the note_id of admin might be 66, now number is guessable and BruteForceable but not the note_secret and that's where the we implant our injection attack 
 
 ## Solution Code
 
