@@ -1,4 +1,4 @@
-baseURL: https://0bugteam.github.io/
+baseURL:
 languageCode: en-us
 title: 0bug
 buildDrafts: true
